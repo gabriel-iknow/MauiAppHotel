@@ -55,7 +55,8 @@
                 <Label Text="Escolha sua Suíte"/>
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua acomodação"/>
+                        Title="Selecione sua acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
                        Margin="10">
@@ -76,7 +77,7 @@
           
                 </Frame>
 
-                <Button Text="Avançar"/>
+                <Button Text="Avançar" Clicked="Button_Clicked"/>
                 <Button Text="Sobre o Aplicativo"
                                 Clicked="AbrirSobre"
                                 BackgroundColor="{StaticResource Primary}"
@@ -86,6 +87,14 @@
                                 HeightRequest="35"
                                 Padding="5"
                                 Margin="10"/>
+                <Button Text="Ver Benefícios"
+                        BackgroundColor="#007AFF"
+                        TextColor="White"
+                        CornerRadius="8"
+                        HeightRequest="40"
+                        WidthRequest="120"
+                        FontSize="10"
+                        Clicked="Button_Clicked_1"/>
             </VerticalStackLayout>
         </Frame>
         
